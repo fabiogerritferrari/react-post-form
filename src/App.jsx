@@ -26,11 +26,15 @@ function App() {
         <h1>Create your posts here </h1>
       </header>
       <main className='container'>
-        <PostForm
-          formData={formData}
-          changeFormData={changeFormData}
-        />
-      </main>
+        <div className="row">
+          <form className='col-6'>
+            <PostForm
+              formData={formData}
+              changeFormData={changeFormData}
+            />
+          </form>
+        </div>
+      </main >
     </>
   )
 }
